@@ -7,7 +7,10 @@
 <body>
 
     @auth
-          
+    <p>Congrats! You are logged in!</p>
+    <form action="/logout" method="POST"></form>
+        @csrf
+        <button>Log Out</button>
     @else
 
     @endauth
